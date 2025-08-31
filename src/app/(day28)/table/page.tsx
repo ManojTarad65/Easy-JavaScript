@@ -102,14 +102,14 @@ const Home = () => {
             />
           </div>
           <div className="flex justify-center mt-5">
-          <button className='bg-blue-500 text-white p-2 rounded bg-green-600 cursor-pointer' type="submit">Submit</button>
+          <button className='bg-green-600 text-white p-2 rounded cursor-pointer' type="submit">Submit</button>
           </div>
 
         </form>
 
       </div>
       <div className="font-bold text-2xl flex flex-col gap-2">
-        {result && (typeof result === "string" ? <p className='text-black text-lg font-bold bg-gray-900 text-white p-2 rounded'>{result}</p> : result.map((item,index) => <p className='text-black text-lg font-bold bg-gray-900 text-white p-2 rounded' key={index}>{item}</p>))}
+        {result && (typeof result === "string" ? <p className='text-white text-lg font-bold bg-gray-900 p-2 rounded'>{result}</p> : result?.map((item:any,index:any) => <p className='text-white text-lg font-bold bg-gray-900 p-2 rounded' key={index}>{item}</p>))}
         </div>
       </div>
   )

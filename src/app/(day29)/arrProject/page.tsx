@@ -183,14 +183,15 @@ const arrProject = () => {
   return (
     <div className="h-screen w-screen flex justify-center items-center bg-gray-900 flex-col">
       <div className="bg-blue-400  h-2/5 w-2/5 rounded flex justify-center items-center flex-col gap-10 ">
-        <div className="font-bold text-2xl flex gap-3 relative  ">
+        <div className="font-bold flex-wrap text-2xl flex gap-3 w-[400px] h-[100px] justify-center items-center overflow-auto">
           {arr.length === 0
             ? "Array is empty"
             : arr.map((item, index) => {
                 return (
-                  <div
-                    className="bg-gray-900 text-white font-bold text-2xl mt-4 px-4 py-2 rounded absolute top-2 w-full  "
-                    key={index}
+                  <div key={index}
+                    className={`
+                            bg-gray-900 text-white font-bold text-2xl 
+                            px-4 py-2 rounded shadow-lg`}
                   >
                     {item}
                   </div>
