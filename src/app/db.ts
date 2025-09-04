@@ -1,0 +1,37 @@
+export const movies = [
+    {
+        id: 1,
+        name: "Inception",
+        year: 2010,
+        genre: ["Sci-Fi", "Action"],
+        rating: 8.8,
+        duration: 148,
+        inTheaters: false,
+    },
+    {
+        id: 2,
+        name: "The Dark Knight",
+        year: 2008,
+        genre: ["Action", "Crime", "Drama"],
+        rating: 9.0,
+        duration: 152,
+        inTheaters: false,
+    },
+    {
+        id: 3,
+        name: "Interstellar",
+        year: 2014,
+        genre: ["Adventure", "Drama", "Sci-Fi"],
+        rating: 8.6,
+        duration: 169,
+        inTheaters: false,
+    },
+    {   id: 4,
+        name: "The Matrix", 
+        year: 1999,
+        genre: ["Action", "Sci-Fi"],
+        rating: 8.7,
+        duration: 136,
+        inTheaters: false,
+    }
+];
