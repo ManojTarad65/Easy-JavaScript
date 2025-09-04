@@ -2,18 +2,23 @@
 import React, { useEffect } from 'react'
 
 const GetData = async() => {
+    console.log("loading data please wait...")
     const getData = async()=>{
         const response =  await new Promise((resolve)=> setTimeout(()=>resolve(fetch("https://jsonplaceholder.typicode.com/users")), 4000))
-        const data = await response.json()
+        const data = await response.json() 
         console.log(data)
     }
+
     getData()
-    return <h1>GetData</h1>
+    return <h1>GetData
+
+    </h1>
 }
 
 export default GetData
 
-// async
+
+// async  -> 
 // data fetch 
 
 // Data Fetch 
@@ -67,4 +72,3 @@ export default GetData
 // 3. props -> destructuring and children 
 // 4. project -> invole laoding animation , fetching data 
 // 5. Shoes wali website -> padh lena yaad se
-// 6. JP lovers 
